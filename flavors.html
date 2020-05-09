@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<title>Coastal Craft - Flavors</title>
+<meta name="description" content="Inspired By Culture - Coastal Craft Ice Cream is a group of chefs passionate about making ice cream for other chefs and for food enthusiasts.">
+
+<meta property="og:url" content="http://www.jasonkarlavige.com/coastalcraft" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Coastal Craft - Flavors" />
+<meta property="og:description" content="Inspired By Culture - Coastal Craft Ice Cream is a group of chefs passionate about making ice cream for other chefs and for food enthusiasts." />
+<meta property="og:image" content="http://coastalcraft.jasonkarlavige.com/images/profile_img.jpg"/>
+
+<link href="https://fonts.googleapis.com/css?family=Hind:400,500,600" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,900,700" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/dcsns_wall.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg">
+
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <link href="css/iestyle.css" rel="stylesheet" type="text/css">
+<![endif]-->
+    
+</head>
+
+<body>
+
+<div id="top"></div>
+    
+    <header>
+    	<div class="cap">
+        
+        	<ul class="navTitle">
+            	<li class="navBrand"><a href="index.html"></a></li>
+            	<li class="mobile-icon"><a href=""><i class="fa fa-bars"></i></a></li>
+        	</ul>
+        	<!--navTitle-->
+            
+        	<nav class="primary-menu">
+                <li><a href="index.html">Home</a></li>
+        		<li class="nav-active"><a href="flavors.html">Flavors</a></li>
+        		<li><a href="about.html">About</a></li>
+        		<li><a href="create.html">Create</a></li>
+        		<li><a href="contact.html">Contact</a></li>	           
+            </nav><!--primaryNav-->
+            
+            <ul class="mobile-menu">
+                <li><a href="index.html">Home | <i class="fa fa-home"></i></a></li>
+        		<li><a href="flavors.html">Flavors | <i class="fa fa-star mobile-nav-active"></i></a></li>
+        		<li><a href="about.html">About | <i class="fa fa-info-circle"></i></a></li>
+        		<li><a href="create.html">Create | <i class="fa fa-paint-brush"></i></a></li>
+        		<li><a href="contact.html">Contact | <i class="fa fa-comment"></i></a></li>
+           	</ul> 
+            
+        </div><!--cap-->
+    </header>
+    
+    <div class="content-wrap">
+    
+    <section class="page-banner create-banner group">
+    		<div class="cap wrap">
+        		<div class="page-banner-wrap">
+    				<h1>Flavors</h1>
+            		<p>We find ideas for new flavors in places near and far, and we strive to honor the people and cultures that inspire us.</p>
+            	</div><!--page-banner-wrap-->
+        	</div><!--cap-->
+    	</section><!--page-banner-->
+    
+    <section class="group flavors-shop"> <!-- Shop Flavors-->
+    	<div class="cap wrap">
+    		
+            <div class="section-head">
+        		<h1>Shop our Flavors</h1>
+			</div><!--section-head-->
+        
+        
+        	<div ng-app="flavorSelect" ng-controller="ctrl" class="flavors-shop-contain">
+            	
+                <div class="col-sm-third shop-dropdown-contain">
+            		
+                    <select ng-model="dropdown" class="shop-dropdown" name="flavorSelect">
+                    	<option value="">Choose Flavor</option>
+  						<option value="1">Aunt Hazel</option>
+                        <option value="2">Aztec Chocolate & Caramel</option>
+                        <option value="3">Bourbon Burnt Sugar</option>
+                        <option value="4">Brown Butter Praline</option>
+                        <option value="5">Cherries & Cream</option>
+                        <option value="6">Chocolate & Chocolate</option>
+                        <option value="7">Coffee & Chocolate</option>
+                        <option value="8">Mango Chile Lime</option>
+                        <option value="9">Mixed Berries & Prosecco</option>
+                        <option value="10">Mixed Berry Buttermilk</option>
+                        <option value="11">Mr. Butter</option>
+                        <option value="12">Pistachio Honey Ricotta</option>
+                        <option value="13">Roasted Caramel Banana</option>
+                        <option value="14">Roasted Coconut Lime</option>
+                        <option value="15">Roasted Pistachio</option>
+                        <option value="16">Strawberry Vanilla</option>
+                        <option value="17">Toffee Toasted Almond</option>
+                        <option value="18">Coffee & Toffee Collection</option>
+                        <option value="19">Coastal Collection</option>
+                    </select>
+            	</div><!--shop-dropdown-contain-->
+            
+            	<div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==1">
+            		<h2>Aunt Hazel</h2>
+                	<p><span class="bold-type">Price:</span> $15.99 per pint</p>
+                    <p><span class="bold-type">Type:</span> Ice Cream</p>
+                    <p>** Featured Flavor</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==2">
+            		<h2>Aztec Chocolate and Caramel</h2>
+                	<p><span class="bold-type">Price:</span> $17.99 per pint</p>
+                    <p><span class="bold-type">Type:</span> Ice Cream</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+
+				<div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==3">
+            		<h2>Bourbon Burnt Sugar</h2>
+                	<p><span class="bold-type">Price:</span> $14.99 per pint</p>
+                    <p><span class="bold-type">Type:</span> Ice Cream</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+
+				<div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==4">
+            		<h2>Brown Butter Praline</h2>
+                	<p><span class="bold-type">Price:</span> $15.99 per pint</p>
+                    <p><span class="bold-type">Type:</span> Ice Cream</p>
+                    <p>** Featured Flavor</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==5">
+            		<h2>Cherries & Cream</h2>
+                	<p><span class="bold-type">Price:</span> $16.99 per pint</p>
+                    <p><span class="bold-type">Type:</span> Ice Cream</p>
+                    <p>** Featured Flavor</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==6">
+            		<h2>Chocolate & Chocolate</h2>
+                	<p><span class="bold-type">Price:</span> $12.99 per pint</p>
+                    <p><span class="bold-type">Type:</span> Ice Cream</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==7">
+            		<h2>Coffee & Chocolate</h2>
+                	<p><span class="bold-type">Price:</span> $15.99 per pint</p>
+                    <p><span class="bold-type">Type:</span> Ice Cream</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==8">
+            		<h2>Mango Chile Lime</h2>
+                	<p><span class="bold-type">Price:</span> $17.99 per pint</p>
+                    <p><span class="bold-type">Type:</span> Sorbet</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==9">
+            		<h2>Mixed Berries & Prosecco</h2>
+                	<p><span class="bold-type">Price:</span> $14.99 per pint</p>
+                    <p><span class="bold-type">Type:</span> Sorbet</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==10">
+            		<h2>Mixed Berry Buttermilk</h2>
+                	<p><span class="bold-type">Price:</span> $16.99 per pint</p>
+                    <p><span class="bold-type">Type:</span> Ice Cream</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==11">
+            		<h2>Mr. Butter</h2>
+                	<p><span class="bold-type">Price:</span> $18.99 per pint</p>
+                    <p><span class="bold-type">Type:</span> Ice Cream</p>
+                    <p>** Featured Flavor</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==12">
+            		<h2>Pistachio Honey Ricotta</h2>
+                	<p><span class="bold-type">Price:</span> $12.99 per pint</p>
+                    <p><span class="bold-type">Type:</span> Gelato</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==13">
+            		<h2>Roasted Caramel Banana</h2>
+                	<p><span class="bold-type">Price:</span> $14.95 per pint</p>
+                    <p><span class="bold-type">Type:</span> Ice Cream</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==14">
+            		<h2>Roasted Coconut Lime</h2>
+                	<p><span class="bold-type">Price:</span> $13.99 per pint</p>
+                    <p><span class="bold-type">Type:</span> Ice Cream</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==15">
+            		<h2>Roasted Pistachio</h2>
+                	<p><span class="bold-type">Price:</span> $13.95 per pint</p>
+                    <p><span class="bold-type">Type:</span> Ice Cream</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==16">
+            		<h2>Strawberry Vanilla</h2>
+                	<p><span class="bold-type">Price:</span> $13.99 per pint</p>
+                    <p><span class="bold-type">Type:</span> Ice Cream</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==17">
+            		<h2>Toffee Toasted Almond</h2>
+                	<p><span class="bold-type">Price:</span> $16.99 per pint</p>
+                    <p><span class="bold-type">Type:</span> Ice Cream</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==18">
+            		<h2>Coffee & Toffee</h2>
+                	<p><span class="bold-type">Price:</span> $139</p>
+                    <p><span class="bold-type">Type:</span> Collection</p>
+                    <p>Coffee and toffee are each loved for their rich flavors - and they make awesome ice creams, too. You'll get two pints each of Sticky Toffee Pudding, Toffee Toasted Almond, Roasted Coffee Caramel, and Coffee & Chocolate.</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+                <div class="col-sm-2third selected-flavor-contain" ng-show="dropdown==19">
+            		<h2>Coastal</h2>
+                	<p><span class="bold-type">Price:</span> $139</p>
+                    <p><span class="bold-type">Type:</span> Collection</p>
+                    <p>Have fun and create your own custom collection – or put together an assortment for someone special. Choose up to 8 different flavors.</p>
+                	<p  class="flavors-shop-btn-wrap"><a href="https://www.paypal.com/home" class="btn btn-flavors-shop" target="_blank">Buy Now</a></p> 
+            	</div><!--selected-flavor-contain-->
+                
+            </div><!--flavors-shop-contain-->
+        </div><!--cap-->
+    </section><!--flavors-shop-->
+    
+    <section class="featured-flavors">
+    	<div class="cap wrap featured-wrap">
+			<div class="section-head">
+        		<h2>Featured Flavors</h2>
+			</div><!--section-head-->
+            <div class="featured-flavors-contain group">
+            	
+                <div class="ft-flavor col-sm-half col-md-qt">
+                	<img src="images/flavors/flavor_aunthazel.png" alt="Aunt Hazel"/>
+                    <h5 id="flavor-hazel">Aunt Hazel</h5>
+                    <p>Raid your classy aunt's chocolate stash. We make our own hazelnut praline (with just a pinch of black pepper) and add it to chocolate-hazelnut ice cream with chocolate chunks. Sophisticated. Irresistible.</p>
+                </div><!--ft-flavor-->
+                
+                <div class="ft-flavor col-sm-half col-md-qt">
+                	<img src="images/flavors/flavor_brownbutter.png" alt="Brown Butter Praline"/>
+                    <h5 id="flavor-brownbutter">Brown Butter Praline</h5>
+                    <p>The French call it beurre noisette, noting its similarity to the aroma of freshly roasted hazelnuts. We blend it into a slow-cooked caramel and ribbon it into our sweet cream ice cream while we “make it rain” with sugar-roasted praline pecans.</p>
+                </div><!--ft-flavor-->
+                
+                <div class="ft-flavor col-sm-half col-md-qt">
+                	<img src="images/flavors/flavor_cherriescream.png" alt="Cherries and Cream"/>
+                    <h5 id="flavor-cherries">Cherries and Cream</h5>
+                    <p>We make an old-school Philly-style mix for this sweet cream-forward treat. Simmered cherries mingle with sugar, vanilla, and lemon zest. To finish, we splash in a touch of almond extract and freshly squeezed lemon juice.</p>
+                </div><!--ft-flavor-->
+                
+                <div class="ft-flavor col-sm-half col-md-qt">
+                	<img src="images/flavors/flavor_mrbutter.png" alt="Mr. Butter"/>
+                    <h5  id="flavor-mrbutter">Mr. Butter</h5>
+                    <p>Peanut butter lovers, here’s your bliss. We gently fold lavish amounts of peanut butter ganache and chocolate chunks into chocolate ice cream. Your tongue is guaranteed to stick to the roof of your mouth.</p>
+                </div><!--ft-flavor-->
+                
+            </div><!--featured-flavors-contain-->
+            
+        </div><!--cap-->
+    </section><!--featured-flavors-->
+    
+    <section class="ideas group">
+    	<div class="cap wrap">
+    		<div class="ideas-content">
+            	<div class="section-head">
+        			<h3>Bring Your <span id="ideas-font">Ideas!</span></h3>
+				</div><!--section-head-->
+            	<p><span>We like challenges.</span> We’re happy to collaborate with you to design a single flavor or an entire line of flavors that express your vision.</p>
+            	<p  class="ideas-btn-wrap"><a href="create.html" class="btn btn-ideas">Create Yours</a></p> 
+        	</div><!--ideas-content-->
+        </div><!--cap-->
+    </section><!--ideas-->
+    
+    <footer class="group">
+    	<div class="cap wrap">
+    	<div class="col-md-qt">
+            <ul class="footer-list no-border">
+            	<li><h2>Links</h2></li>
+                <li><a href="index.html"><i class="fa fa-caret-right"></i> Home</a></li>
+				<li><a href="#top"><i class="fa fa-caret-right"></i> Flavors</a></li>
+                <li><a href="about.html"><i class="fa fa-caret-right"></i> About</a></li>
+                <li><a href="create.html"><i class="fa fa-caret-right"></i> Create</a></li>
+                <li><a href="contact.html"><i class="fa fa-caret-right"></i> Contact</a></li>
+        	</ul><!--footer-list-->
+        </div><!--footer-menu-->
+
+        <div class="col-md-qt">
+            <ul class="footer-list">
+                <li><h2>Location</h2></li>
+                <li>Route 1</li>
+                <li>Portland, Maine</li>
+                <li>04101</li>
+        	</ul><!--footer-list-->
+        </div>
+  
+  		<div class="col-md-qt">
+            <ul class="footer-list">
+                <li><h2>Contact</h2></li>
+                <li><a href="tel:859-555-9578"><i class="fa fa-phone"></i> (859)-555-9578</a></li>
+                <li><a href="mailto:order@coastalcraftportland.com"><i class="fa fa-envelope"></i> Orders</a></li>
+                <li><a href="mailto:info@coastalcraftportland.com"><i class="fa fa-envelope"></i> Info</a></li>
+        	</ul><!--footer-list-->
+        </div>
+       
+        <div class="col-md-qt">
+           <ul class="footer-list">
+              <li><h2>Social</h2></li>
+              <ul class="social-list">
+              	<li><a href="images/social_sites/twitter_page.jpg" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="images/social_sites/fb_page.jpg" target="_blank"><i class="fa fa-facebook" target="_blank"></i></a></li>
+                <li><a href="images/social_sites/insta_page.jpg" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="snapchat.html"><img src="images/snapchat.png" id="snapchat" alt="Snapchat"/></a></li>
+              </ul><!--social-list-->			
+           </ul><!--footer-list-->
+        </div>
+        </div><!--cap-->
+        <img src="images/lighthouse.png" id="lighthouse" alt="Lighthouse"/>
+    </footer>
+    
+    <section class="copyright group">
+    	<div class="copy-contain cap wrap">
+        	<p>Coastal Craft Ice Cream © 2016</p> <br />
+            <p id="jk"><span>Website by </span><a href="http://jasonkarlavige.com/" target="_blank">Jason Karlavige</a></p>
+        </div><!--copy-contain-->
+        <a href="#top"><i class="fa fa-arrow-up top"></i></a>
+    </section><!--copyright-->
+    
+    </div><!--content-wrap-->
+    
+    <script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/mobile_menu.js"></script>
+    <script src="js/angular.min.js"></script>
+	<script src="js/flavors.js"></script>
+    <script src="js/featured_descrip.js"></script>
+    <script>
+ $(document).ready(function(){
+  $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top - 75;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 500);
+       return false;
+      }
+    }
+  });
+});
+</script>
+</body>
+</html>
